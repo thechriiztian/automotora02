@@ -29,6 +29,10 @@ ALLOWED_HOSTS = []
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
+LOGIN_REDIRECT_URL = "/"
+
+LOGOUT_REDIRECT_URL = "/accounts/login"
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'accounts',
 ]
 
 MIDDLEWARE = [
